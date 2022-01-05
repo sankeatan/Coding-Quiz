@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <title>Code Quiz</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/jass.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body class="bg-dark text-light">
+  <main class="my-5 mx-auto flex-row">
+    <div id="start-screen" class="w-100 flex-column align-center">
+        <p class="">Take this quiz</p>
+        <button id="start-quiz" class="btn btn-lg btn-danger:hover w-25">Start Quiz</button>
+    </div>
+    <div id="scoreboard" class="card card-rounded justify-end bg-light text-dark">
+        <p class="text-center">Scoreboard</p>
+        <p id="wins">Wins: </p>
+        <p id="losses">Losses: </p>
+        <button id="reset" class="btn">Reset Scoreboard</button>
+    </div>
+    <div id="timer" class="card card-rounded justify-end bg-light text-dark">
+        <h3 class="align-center">Time Left:</h3>
+        <p id="time-left"></p>
+    </div>
+    <form id="quiz" class="bg-light text-dark">
+    </form>
+    
+  </main>
+
+  <!-- Added link to the jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- Your JavaScript file -->
+  <script type="text/javascript" src="assets/js/script.js">
+  </script>
+</body>
+
+</html>
