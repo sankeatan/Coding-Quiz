@@ -6,25 +6,28 @@
   <title>Code Quiz</title>
   <link rel="stylesheet" type="text/css" href="./assets/css/jass.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 </head>
 
-<body class="bg-dark text-light">
-  <main class="my-5 mx-auto flex-row">
-    <div id="start-screen" class="w-100 flex-column align-center">
-        <p class="">Take this quiz</p>
-        <button id="start-quiz" class="btn btn-lg btn-danger:hover w-25">Start Quiz</button>
+<body>
+  <header class="container flex-row">
+    <div id="scoreboard" class="container col-3 align-self-end">
+      <p class="text-center">Scoreboard</p>
+      <p id="wins"></p>
+      <p id="losses"></p>
+      <button id="reset" class="btn btn-danger:hover align-center">Reset Scoreboard</button>
+  </div>
+  <div id="timer" class="container col-3 align-self-start">
+    <h3 id="time-left" class="align-center"></h3>
+</div>
+  </header>
+  <main class=flex-column>
+    <div id="start-screen" class="container text-center align-self-center">
+        <p>Take this quiz</p>
+        <button id="start-quiz" class="btn btn-danger:hover align-self-center">Start Quiz</button>
     </div>
-    <div id="scoreboard" class="card card-rounded justify-end bg-light text-dark">
-        <p class="text-center">Scoreboard</p>
-        <p id="wins">Wins: </p>
-        <p id="losses">Losses: </p>
-        <button id="reset" class="btn">Reset Scoreboard</button>
-    </div>
-    <div id="timer" class="card card-rounded justify-end bg-light text-dark">
-        <h3 class="align-center">Time Left:</h3>
-        <p id="time-left"></p>
-    </div>
-    <form id="quiz" class="bg-light text-dark">
+    
+    <form id="quiz" class="container col-12 ">
     </form>
     
   </main>
