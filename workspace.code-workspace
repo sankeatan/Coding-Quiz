@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../UCF-VIRT-BO-FSF-PT-12-2021-U-B/05-Third-Party-APIs"
+		},
+		{
+			"path": "../../UCF-VIRT-BO-FSF-PT-12-2021-U-B/04-Web-APIs copy"
+		},
+		{
+			"path": "../../../code-repo/06-Server-Side-APIs"
+		}
+	],
+	"settings": {}
+}
